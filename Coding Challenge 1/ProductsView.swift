@@ -32,6 +32,9 @@ struct ProductsView: View {
             ProductOverviewCardView(product: product)
           }
         }
+        .navigationDestination(for: Product.self) { product in
+          Text(product.title)
+        }
       }
       .navigationTitle("Produktübersicht")
     }
