@@ -26,4 +26,45 @@ extension Product {
   var isAvailableColor: Color {
     return isAvailable ? Color.green.opacity(0.8) : Color.red.opacity(0.8)
   }
+
+  static func fixture(
+    id: Int = 0,
+    title: String = "",
+    price: Price = Price(value: 0.0, currency: ""),
+    imageUrl: URL = URL(string: "")!,
+    description: String = "",
+    isAvailable: Bool = true,
+    variants: [Variant]? = [
+      Variant(id: 0, color: "", imageUrl: "", isAvailable: true)
+    ]
+  ) -> Product {
+    Product(
+      id: id,
+      title: title,
+      price: price,
+      imageUrl: imageUrl,
+      description: description,
+      isAvailable: isAvailable,
+      variants: variants
+    )
+  }
+
+  static var allProperties: Product {
+    .fixture(
+      id: 4711,
+      title: "Kleid",
+      price: Price(value: 124.22, currency: "€"),
+      imageUrl: URL(string: "https://image01.bonprix.de/assets/275x385/1692190166/23120919-ledODpTJ.jpg")!,
+      description: "Ein tolles Kleid",
+      isAvailable: true,
+      variants: [
+        Variant(
+          id: 4712,
+          color: "kastanienbraun",
+          imageUrl: "https://image01.bonprix.de/assets/275x385/1600856915/20167389-2HSkctsd.jpg",
+          isAvailable: true
+        )
+      ]
+    )
+  }
 }
