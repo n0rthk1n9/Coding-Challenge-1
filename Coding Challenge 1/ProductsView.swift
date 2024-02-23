@@ -13,7 +13,7 @@ struct ProductsView: View {
   private var gridItemWidth: CGFloat {
     let screenWidth = UIScreen.main.bounds.width
     let totalSpacing = 20.0 * (CGFloat(columnsCount) - 1)
-    let totalPadding = 20.0 * 2
+    let totalPadding = 5.0 * 2
     let availableWidth = screenWidth - totalSpacing - totalPadding
     return availableWidth / CGFloat(columnsCount)
   }
@@ -62,12 +62,23 @@ struct ProductsView: View {
                 .font(.headline)
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)
-                .padding(.top, 5)
                 .clipped()
+                .padding()
+
+              Text(product.price.formatted)
+                .font(.headline)
+                .multilineTextAlignment(.leading)
+                .lineLimit(2)
+                .clipped()
+                .padding(.horizontal)
+                .padding(.bottom)
             }
+            .background(Color.white)
+            .cornerRadius(8)
+            .shadow(radius: 4)
+            .padding(.horizontal, 5)
           }
         }
-        .padding(.horizontal)
       }
       .navigationTitle("Produktübersicht")
     }
