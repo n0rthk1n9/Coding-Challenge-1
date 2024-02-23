@@ -40,13 +40,13 @@ struct ProductsView: View {
               .clipped()
               .cornerRadius(8)
               .overlay(
-                Text(product.isAvailable ? "Auf Lager" : "Ausverkauft")
+                Text(product.isAvailableText)
                   .fontWeight(Font.Weight.medium)
                   .font(Font.system(size: 12))
                   .foregroundColor(Color.white)
                   .padding([.leading, .trailing], 8)
                   .padding([.top, .bottom], 4)
-                  .background(product.isAvailable ? Color.green.opacity(0.8) : Color.red.opacity(0.8))
+                  .background(product.isAvailableColor)
                   .clipShape(
                     .rect(
                       topLeadingRadius: 8,

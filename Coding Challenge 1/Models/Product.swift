@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Product: Codable, Equatable, Hashable, Identifiable {
   let id: Int
@@ -15,4 +16,14 @@ struct Product: Codable, Equatable, Hashable, Identifiable {
   let description: String
   let isAvailable: Bool
   let variants: [Variant]?
+}
+
+extension Product {
+  var isAvailableText: String {
+    return isAvailable ? "Auf Lager" : "Ausverkauft"
+  }
+
+  var isAvailableColor: Color {
+    return isAvailable ? Color.green.opacity(0.8) : Color.red.opacity(0.8)
+  }
 }
