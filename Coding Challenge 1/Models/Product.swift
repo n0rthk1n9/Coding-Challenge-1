@@ -11,7 +11,7 @@ struct Product: Codable, Equatable, Hashable, Identifiable {
   let id: Int
   let title: String
   let price: Price
-  let imageUrl: String
+  let imageUrl: URL
   let description: String
   let isAvailable: Bool
   let variants: [Variant]?
