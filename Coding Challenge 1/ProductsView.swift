@@ -40,21 +40,7 @@ struct ProductsView: View {
               .clipped()
               .cornerRadius(8)
               .overlay(
-                Text(product.isAvailableText)
-                  .fontWeight(Font.Weight.medium)
-                  .font(Font.system(size: 12))
-                  .foregroundColor(Color.white)
-                  .padding([.leading, .trailing], 8)
-                  .padding([.top, .bottom], 4)
-                  .background(product.isAvailableColor)
-                  .clipShape(
-                    .rect(
-                      topLeadingRadius: 8,
-                      bottomLeadingRadius: 0,
-                      bottomTrailingRadius: 8,
-                      topTrailingRadius: 0
-                    )
-                  ),
+                AvailabilityBadgeView(product: product),
                 alignment: .topLeading
               )
 
