@@ -20,7 +20,6 @@ class ProductsViewModel: ObservableObject {
   func getProducts() {
     do {
       products = try productsService.loadProductsFromJSON()
-      print(products)
     } catch {
       self.error = error
       print(error.localizedDescription)
