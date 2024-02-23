@@ -29,28 +29,7 @@ struct ProductsView: View {
       ScrollView {
         LazyVGrid(columns: columns, spacing: 20) {
           ForEach(viewModel.products) { product in
-            VStack(alignment: .leading) {
-              ProductImageView(product: product)
-
-              Text(product.title)
-                .font(.headline)
-                .multilineTextAlignment(.leading)
-                .lineLimit(2)
-                .clipped()
-                .padding()
-
-              Text(product.price.formatted)
-                .font(.headline)
-                .multilineTextAlignment(.leading)
-                .lineLimit(2)
-                .clipped()
-                .padding(.horizontal)
-                .padding(.bottom)
-            }
-            .background(Color.white)
-            .cornerRadius(8)
-            .shadow(radius: 4)
-            .padding(.horizontal, 5)
+            ProductOverviewCardView(product: product)
           }
         }
       }

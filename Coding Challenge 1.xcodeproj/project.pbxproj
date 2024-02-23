@@ -21,6 +21,7 @@
 		57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */; };
 		57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C942B89133800294392 /* AvailabilityBadgeView.swift */; };
 		57192C972B89179700294392 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C962B89179700294392 /* ProductImageView.swift */; };
+		57192C992B89184800294392 /* ProductOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C982B89184800294392 /* ProductOverviewCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServiceProtocol.swift; sourceTree = "<group>"; };
 		57192C942B89133800294392 /* AvailabilityBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityBadgeView.swift; sourceTree = "<group>"; };
 		57192C962B89179700294392 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
+		57192C982B89184800294392 /* ProductOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOverviewCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
 				57192C962B89179700294392 /* ProductImageView.swift */,
+				57192C982B89184800294392 /* ProductOverviewCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */,
 				57192C712B88F1B900294392 /* Coding_Challenge_1App.swift in Sources */,
 				57192C902B88F77900294392 /* ProductsService.swift in Sources */,
+				57192C992B89184800294392 /* ProductOverviewCardView.swift in Sources */,
 				57192C872B88F38900294392 /* Variant.swift in Sources */,
 				57192C832B88F32C00294392 /* Product.swift in Sources */,
 			);
