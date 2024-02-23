@@ -20,6 +20,7 @@
 		57192C902B88F77900294392 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C8F2B88F77900294392 /* ProductsService.swift */; };
 		57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */; };
 		57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C942B89133800294392 /* AvailabilityBadgeView.swift */; };
+		57192C972B89179700294392 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C962B89179700294392 /* ProductImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		57192C8F2B88F77900294392 /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServiceProtocol.swift; sourceTree = "<group>"; };
 		57192C942B89133800294392 /* AvailabilityBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityBadgeView.swift; sourceTree = "<group>"; };
+		57192C962B89179700294392 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
+				57192C962B89179700294392 /* ProductImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */,
 				57192C732B88F1B900294392 /* ProductsView.swift in Sources */,
 				57192C8D2B88F66700294392 /* ProductsViewModel.swift in Sources */,
+				57192C972B89179700294392 /* ProductImageView.swift in Sources */,
 				57192C852B88F36E00294392 /* Price.swift in Sources */,
 				57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */,
 				57192C712B88F1B900294392 /* Coding_Challenge_1App.swift in Sources */,

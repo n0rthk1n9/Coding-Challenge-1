@@ -19,6 +19,7 @@ struct ProductsView: View {
   }
 
   private let columnsCount = 2
+
   private var columns: [GridItem] {
     Array(repeating: .init(.fixed(gridItemWidth)), count: columnsCount)
   }
@@ -29,20 +30,7 @@ struct ProductsView: View {
         LazyVGrid(columns: columns, spacing: 20) {
           ForEach(viewModel.products) { product in
             VStack(alignment: .leading) {
-              AsyncImage(url: product.imageUrl) { image in
-                image
-                  .resizable()
-              } placeholder: {
-                ProgressView()
-              }
-              .scaledToFill()
-              .frame(maxWidth: .infinity, maxHeight: 200, alignment: .center)
-              .clipped()
-              .cornerRadius(8)
-              .overlay(
-                AvailabilityBadgeView(product: product),
-                alignment: .topLeading
-              )
+              ProductImageView(product: product)
 
               Text(product.title)
                 .font(.headline)
