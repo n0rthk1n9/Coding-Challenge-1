@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct AvailabilityBadgeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  let product: Product
+
+  var body: some View {
+    Text(product.isAvailableText)
+      .fontWeight(Font.Weight.medium)
+      .font(Font.system(size: 12))
+      .foregroundColor(Color.white)
+      .padding([.leading, .trailing], 8)
+      .padding([.top, .bottom], 4)
+      .background(product.isAvailableColor)
+      .clipShape(
+        .rect(
+          topLeadingRadius: 8,
+          bottomLeadingRadius: 0,
+          bottomTrailingRadius: 8,
+          topTrailingRadius: 0
+        )
+      )
+  }
 }
 
 #Preview {
-    AvailabilityBadgeView()
+  AvailabilityBadgeView(product: .allProperties)
 }
