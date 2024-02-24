@@ -25,6 +25,7 @@
 		57D517D62B8A0BA500294392 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D52B8A0BA500294392 /* ProductDetailView.swift */; };
 		57D517D82B8A1AC200294392 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */; };
 		57D517DA2B8A1D5100294392 /* VariantSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */; };
+		57D517DC2B8A223800294392 /* ProductDetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517DB2B8A223800294392 /* ProductDetailImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		57D517D52B8A0BA500294392 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantSelectionButton.swift; sourceTree = "<group>"; };
+		57D517DB2B8A223800294392 /* ProductDetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
 				57D517D52B8A0BA500294392 /* ProductDetailView.swift */,
 				57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */,
+				57D517DB2B8A223800294392 /* ProductDetailImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				57192C852B88F36E00294392 /* Price.swift in Sources */,
 				57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */,
 				57192C712B88F1B900294392 /* Coding_Challenge_1App.swift in Sources */,
+				57D517DC2B8A223800294392 /* ProductDetailImageView.swift in Sources */,
 				57D517DA2B8A1D5100294392 /* VariantSelectionButton.swift in Sources */,
 				57192C902B88F77900294392 /* ProductsService.swift in Sources */,
 				57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */,

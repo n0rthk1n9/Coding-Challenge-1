@@ -13,19 +13,7 @@ struct ProductDetailView: View {
   var body: some View {
     ScrollView {
       ZStack {
-        AsyncImage(
-          url: viewModel.selectedImageUrl ?? viewModel.product.imageUrl,
-          content: { image in
-            image
-              .resizable()
-              .scaledToFill()
-              .ignoresSafeArea()
-              .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height * 0.66)
-          },
-          placeholder: {
-            ProgressView()
-          }
-        )
+        ProductDetailImageView(imageUrl: viewModel.selectedImageUrl ?? viewModel.product.imageUrl)
       }
       VStack(alignment: .leading, spacing: 10) {
         Text(viewModel.product.price.formatted)
