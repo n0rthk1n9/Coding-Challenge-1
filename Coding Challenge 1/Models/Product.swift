@@ -35,7 +35,7 @@ extension Product {
     description: String = "",
     isAvailable: Bool = true,
     variants: [Variant]? = [
-      Variant(id: 0, color: "", imageUrl: "", isAvailable: true)
+      Variant(id: 0, color: "", imageUrl: URL(string: "")!, isAvailable: true)
     ]
   ) -> Product {
     Product(
@@ -60,8 +60,20 @@ extension Product {
       variants: [
         Variant(
           id: 4712,
+          color: "grau meliert",
+          imageUrl: URL(string: "https://image01.bonprix.de/assets/275x385/1692190166/23120919-ledODpTJ.jpg")!,
+          isAvailable: true
+        ),
+        Variant(
+          id: 4713,
           color: "kastanienbraun",
-          imageUrl: "https://image01.bonprix.de/assets/275x385/1600856915/20167389-2HSkctsd.jpg",
+          imageUrl: URL(string: "https://image01.bonprix.de/assets/275x385/1600856915/20167389-2HSkctsd.jpg")!,
+          isAvailable: true
+        ),
+        Variant(
+          id: 4714,
+          color: "schwarz",
+          imageUrl: URL(string: "https://image01.bonprix.de/assets/275x385/1692190099/23122048-j0pv69LB.jpg")!,
           isAvailable: true
         )
       ]

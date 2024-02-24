@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Variant: Codable, Equatable, Hashable {
+struct Variant: Codable, Equatable, Hashable, Identifiable {
   let id: Int
   let color: String
-  let imageUrl: String
+  let imageUrl: URL
   let isAvailable: Bool
 }
