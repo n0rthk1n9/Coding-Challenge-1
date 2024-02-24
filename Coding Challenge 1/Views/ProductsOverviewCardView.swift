@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductOverviewCardView: View {
+struct ProductsOverviewCardView: View {
   let product: Product
 
   var body: some View {
@@ -40,5 +40,5 @@ struct ProductOverviewCardView: View {
 }
 
 #Preview {
-  ProductOverviewCardView(product: .allProperties)
+  ProductsOverviewCardView(product: .allProperties)
 }

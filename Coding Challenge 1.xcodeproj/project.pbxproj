@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57192C712B88F1B900294392 /* Coding_Challenge_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C702B88F1B900294392 /* Coding_Challenge_1App.swift */; };
-		57192C732B88F1B900294392 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C722B88F1B900294392 /* ProductsView.swift */; };
+		57192C732B88F1B900294392 /* ProductsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C722B88F1B900294392 /* ProductsOverviewView.swift */; };
 		57192C752B88F1BB00294392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57192C742B88F1BB00294392 /* Assets.xcassets */; };
 		57192C782B88F1BB00294392 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57192C772B88F1BB00294392 /* Preview Assets.xcassets */; };
 		57192C802B88F2B300294392 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 57192C7F2B88F2B300294392 /* products.json */; };
@@ -21,13 +21,13 @@
 		57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */; };
 		57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C942B89133800294392 /* AvailabilityBadgeView.swift */; };
 		57192C972B89179700294392 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C962B89179700294392 /* ProductImageView.swift */; };
-		57192C992B89184800294392 /* ProductOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C982B89184800294392 /* ProductOverviewCardView.swift */; };
+		57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C982B89184800294392 /* ProductsOverviewCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57192C6D2B88F1B900294392 /* Coding Challenge 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coding Challenge 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57192C702B88F1B900294392 /* Coding_Challenge_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coding_Challenge_1App.swift; sourceTree = "<group>"; };
-		57192C722B88F1B900294392 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		57192C722B88F1B900294392 /* ProductsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOverviewView.swift; sourceTree = "<group>"; };
 		57192C742B88F1BB00294392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57192C772B88F1BB00294392 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57192C7F2B88F2B300294392 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		57192C912B88F9BF00294392 /* ProductsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServiceProtocol.swift; sourceTree = "<group>"; };
 		57192C942B89133800294392 /* AvailabilityBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityBadgeView.swift; sourceTree = "<group>"; };
 		57192C962B89179700294392 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
-		57192C982B89184800294392 /* ProductOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOverviewCardView.swift; sourceTree = "<group>"; };
+		57192C982B89184800294392 /* ProductsOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOverviewCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				57192C702B88F1B900294392 /* Coding_Challenge_1App.swift */,
-				57192C722B88F1B900294392 /* ProductsView.swift */,
 				57192C932B89131400294392 /* Views */,
 				57192C8B2B88F64F00294392 /* ViewModels */,
 				57192C812B88F31E00294392 /* Models */,
@@ -141,9 +140,10 @@
 		57192C932B89131400294392 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
+				57192C722B88F1B900294392 /* ProductsOverviewView.swift */,
+				57192C982B89184800294392 /* ProductsOverviewCardView.swift */,
 				57192C962B89179700294392 /* ProductImageView.swift */,
-				57192C982B89184800294392 /* ProductOverviewCardView.swift */,
+				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,14 +221,14 @@
 			files = (
 				57192C8A2B88F59700294392 /* JSONDecoder.swift in Sources */,
 				57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */,
-				57192C732B88F1B900294392 /* ProductsView.swift in Sources */,
+				57192C732B88F1B900294392 /* ProductsOverviewView.swift in Sources */,
 				57192C8D2B88F66700294392 /* ProductsViewModel.swift in Sources */,
 				57192C972B89179700294392 /* ProductImageView.swift in Sources */,
 				57192C852B88F36E00294392 /* Price.swift in Sources */,
 				57192C952B89133800294392 /* AvailabilityBadgeView.swift in Sources */,
 				57192C712B88F1B900294392 /* Coding_Challenge_1App.swift in Sources */,
 				57192C902B88F77900294392 /* ProductsService.swift in Sources */,
-				57192C992B89184800294392 /* ProductOverviewCardView.swift in Sources */,
+				57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */,
 				57192C872B88F38900294392 /* Variant.swift in Sources */,
 				57192C832B88F32C00294392 /* Product.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductsView: View {
+struct ProductsOverviewView: View {
   @StateObject private var viewModel = ProductsViewModel()
 
   private var gridItemWidth: CGFloat {
@@ -29,7 +29,7 @@ struct ProductsView: View {
       ScrollView {
         LazyVGrid(columns: columns, spacing: 20) {
           ForEach(viewModel.products) { product in
-            ProductOverviewCardView(product: product)
+            ProductsOverviewCardView(product: product)
           }
         }
         .navigationDestination(for: Product.self) { product in
@@ -45,5 +45,5 @@ struct ProductsView: View {
 }
 
 #Preview {
-  ProductsView()
+  ProductsOverviewView()
 }

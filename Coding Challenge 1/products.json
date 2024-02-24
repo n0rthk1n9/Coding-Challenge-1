@@ -51,5 +51,27 @@
         "imageUrl": "https://image01.bonprix.de/assets/275x385/1568788775/19227355-fbfUTxDQ.jpg",
         "description": "Sportliche Schlupfhose mit elastischem Bund und Cargo-Taschen",
         "isAvailable": false
+    },
+    {
+        "id": 932879,
+        "title": "Loose Fit Schlupfhose, Straight",
+        "price": {
+            "value": 44.99,
+            "currency": "€"
+        },
+        "imageUrl": "https://image01.bonprix.de/assets/275x385/1568788775/19227355-fbfUTxDQ.jpg",
+        "description": "Sportliche Schlupfhose mit elastischem Bund und Cargo-Taschen",
+        "isAvailable": false
+    },
+    {
+        "id": 932880,
+        "title": "Loose Fit Schlupfhose, Straight",
+        "price": {
+            "value": 11.99,
+            "currency": "€"
+        },
+        "imageUrl": "https://image01.bonprix.de/assets/275x385/1568788775/19227355-fbfUTxDQ.jpg",
+        "description": "Sportliche Schlupfhose mit elastischem Bund und Cargo-Taschen",
+        "isAvailable": true
     }
 ]
