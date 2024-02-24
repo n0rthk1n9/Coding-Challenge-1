@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductsOverviewView: View {
-  @StateObject private var viewModel = ProductsViewModel()
+  @StateObject private var viewModel = ProductsOverviewViewModel()
 
   private var gridItemWidth: CGFloat {
     let screenWidth = UIScreen.main.bounds.width

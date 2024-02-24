@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductsViewModel: ObservableObject {
+class ProductsOverviewViewModel: ObservableObject {
   @Published var products: [Product] = []
   @Published var error: Error?
 
