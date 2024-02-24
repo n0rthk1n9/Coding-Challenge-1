@@ -23,6 +23,7 @@
 		57192C972B89179700294392 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C962B89179700294392 /* ProductImageView.swift */; };
 		57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C982B89184800294392 /* ProductsOverviewCardView.swift */; };
 		57D517D62B8A0BA500294392 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D52B8A0BA500294392 /* ProductDetailView.swift */; };
+		57D517D82B8A1AC200294392 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		57192C962B89179700294392 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
 		57192C982B89184800294392 /* ProductsOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOverviewCardView.swift; sourceTree = "<group>"; };
 		57D517D52B8A0BA500294392 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				57192C8C2B88F66700294392 /* ProductsViewModel.swift */,
+				57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				57192C8A2B88F59700294392 /* JSONDecoder.swift in Sources */,
 				57192C922B88F9BF00294392 /* ProductsServiceProtocol.swift in Sources */,
 				57192C732B88F1B900294392 /* ProductsOverviewView.swift in Sources */,
+				57D517D82B8A1AC200294392 /* ProductDetailViewModel.swift in Sources */,
 				57192C8D2B88F66700294392 /* ProductsViewModel.swift in Sources */,
 				57192C972B89179700294392 /* ProductImageView.swift in Sources */,
 				57192C852B88F36E00294392 /* Price.swift in Sources */,

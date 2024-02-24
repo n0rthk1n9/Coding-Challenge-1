@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-  let product: Product
-  @State private var selectedVariantID: Int?
-  @State private var selectedImageUrl: URL?
+  @StateObject var viewModel: ProductDetailViewModel
 
   var body: some View {
     ScrollView {
       ZStack {
         AsyncImage(
-          url: selectedImageUrl ?? product.imageUrl,
+          url: viewModel.selectedImageUrl ?? viewModel.product.imageUrl,
           content: { image in
             image
               .resizable()
@@ -30,7 +28,7 @@ struct ProductDetailView: View {
         )
       }
       VStack(alignment: .leading, spacing: 10) {
-        Text(product.price.formatted)
+        Text(viewModel.product.price.formatted)
           .font(.title2)
         Text("inkl. MwSt., zzgl. Versandkosten")
           .font(.caption)
@@ -38,30 +36,21 @@ struct ProductDetailView: View {
       .frame(maxWidth: .infinity, alignment: .leading)
       .padding(.horizontal)
       .padding(.top)
-      if let variants = product.variants {
+      if let variants = viewModel.product.variants {
         HStack {
           ForEach(variants, id: \.id) { variant in
             Button(variant.color) {
-              selectedVariantID = variant.id
-              selectedImageUrl = variant.imageUrl
+              viewModel.selectVariant(variant)
             }
             .buttonStyle(
               VariantButtonStyle(
-                isSelected: selectedVariantID == variant.id
+                isSelected: viewModel.selectedVariantID == variant.id
               )
             )
           }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
-      }
-    }
-    .onAppear {
-      if let firstVariant = product.variants?.sorted(by: { $0.id < $1.id }).first {
-        selectedVariantID = firstVariant.id
-        selectedImageUrl = firstVariant.imageUrl
-      } else {
-        selectedImageUrl = product.imageUrl
       }
     }
   }
@@ -95,5 +84,5 @@ struct VariantButtonStyle: ButtonStyle {
 }
 
 #Preview {
-  ProductDetailView(product: .allProperties)
+  ProductDetailView(viewModel: ProductDetailViewModel(product: .allProperties))
 }
