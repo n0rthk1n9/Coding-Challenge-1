@@ -39,47 +39,15 @@ struct ProductDetailView: View {
       if let variants = viewModel.product.variants {
         HStack {
           ForEach(variants, id: \.id) { variant in
-            Button(variant.color) {
+            VariantSelectionButton(variant: variant, isSelected: viewModel.selectedVariantID == variant.id) {
               viewModel.selectVariant(variant)
             }
-            .buttonStyle(
-              VariantButtonStyle(
-                isSelected: viewModel.selectedVariantID == variant.id
-              )
-            )
           }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
       }
     }
-  }
-}
-
-struct VariantButtonStyle: ButtonStyle {
-  var isSelected: Bool
-
-  func makeBody(configuration: Configuration) -> some View {
-    configuration.label
-      .font(.system(size: 14))
-      .foregroundColor(isSelected ? .white : .black)
-      .padding(8)
-      .background(
-        ZStack {
-          if isSelected {
-            RoundedRectangle(cornerRadius: 10)
-              .fill(Color.black)
-          } else {
-            RoundedRectangle(cornerRadius: 10)
-              .fill(Color.white)
-              .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                  .stroke(Color.black, lineWidth: 2)
-              )
-          }
-        }
-      )
-      .padding(.top, 5)
   }
 }
 
