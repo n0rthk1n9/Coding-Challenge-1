@@ -33,7 +33,7 @@ struct ProductsOverviewView: View {
           }
         }
         .navigationDestination(for: Product.self) { product in
-          Text(product.title)
+          ProductDetailView(product: product)
         }
       }
       .navigationTitle("Produktübersicht")
