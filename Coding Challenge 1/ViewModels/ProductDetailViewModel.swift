@@ -26,4 +26,22 @@ class ProductDetailViewModel: ObservableObject {
     selectedVariantID = variant.id
     selectedImageUrl = variant.imageUrl
   }
+
+  var addToCartButtonText: String {
+    guard let selectedVariantID = selectedVariantID,
+          let variant = product.variants?.first(where: { $0.id == selectedVariantID })
+    else {
+      return "Wähle eine Farbe"
+    }
+    return variant.isAvailable ? "In die Einkaufstasche" : "Nicht verfügbar"
+  }
+
+  var isAddToCartButtonDisabled: Bool {
+    guard let selectedVariantID = selectedVariantID,
+          let variant = product.variants?.first(where: { $0.id == selectedVariantID })
+    else {
+      return true
+    }
+    return !variant.isAvailable
+  }
 }

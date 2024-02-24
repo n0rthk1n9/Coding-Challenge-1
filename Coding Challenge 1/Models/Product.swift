@@ -68,7 +68,7 @@ extension Product {
           id: 4713,
           color: "kastanienbraun",
           imageUrl: URL(string: "https://image01.bonprix.de/assets/275x385/1600856915/20167389-2HSkctsd.jpg")!,
-          isAvailable: true
+          isAvailable: false
         ),
         Variant(
           id: 4714,
