@@ -16,15 +16,7 @@ struct ProductDetailView: View {
         ZStack {
           ProductDetailImageView(imageUrl: viewModel.selectedImageUrl ?? viewModel.product.imageUrl)
         }
-        VStack(alignment: .leading, spacing: 10) {
-          Text(viewModel.product.price.formatted)
-            .font(.title2)
-          Text("inkl. MwSt., zzgl. Versandkosten")
-            .font(.caption)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal)
-        .padding(.top)
+        ProductDetailPriceView(formattedPrice: viewModel.product.price.formatted)
         if let variants = viewModel.product.variants {
           ProductDetailVariantsView(
             variants: variants,
