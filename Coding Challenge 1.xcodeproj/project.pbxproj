@@ -55,6 +55,7 @@
 		57AA9BD92B8C889600294392 /* ProductDetailAddToCartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailAddToCartButtonView.swift; sourceTree = "<group>"; };
 		57AA9BDB2B8C89C200294392 /* ProductDetailPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailPriceView.swift; sourceTree = "<group>"; };
 		57AA9BDD2B8CAF5A00294392 /* ProductDetailNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailNavigationBar.swift; sourceTree = "<group>"; };
+		57AA9BDF2B8CB24100294392 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		57D517D52B8A0BA500294392 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantSelectionButton.swift; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		57192C642B88F1B900294392 = {
 			isa = PBXGroup;
 			children = (
+				57AA9BDF2B8CB24100294392 /* Readme.md */,
 				57192C6F2B88F1B900294392 /* Coding Challenge 1 */,
 				57192C6E2B88F1B900294392 /* Products */,
 			);
