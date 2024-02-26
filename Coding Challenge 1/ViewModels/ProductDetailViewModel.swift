@@ -28,20 +28,26 @@ class ProductDetailViewModel: ObservableObject {
   }
 
   var addToCartButtonText: String {
-    guard let selectedVariantID = selectedVariantID,
-          let variant = product.variants?.first(where: { $0.id == selectedVariantID })
-    else {
+    if let selectedVariantID = selectedVariantID,
+       let variant = product.variants?.first(where: { $0.id == selectedVariantID })
+    {
+      return variant.isAvailable ? "In die Einkaufstasche" : "Nicht verfügbar"
+    } else if product.variants?.isEmpty ?? true {
+      return product.isAvailable ? "In die Einkaufstasche" : "Nicht verfügbar"
+    } else {
       return "Wähle eine Farbe"
     }
-    return variant.isAvailable ? "In die Einkaufstasche" : "Nicht verfügbar"
   }
 
   var isAddToCartButtonDisabled: Bool {
-    guard let selectedVariantID = selectedVariantID,
-          let variant = product.variants?.first(where: { $0.id == selectedVariantID })
-    else {
+    if let selectedVariantID = selectedVariantID,
+       let variant = product.variants?.first(where: { $0.id == selectedVariantID })
+    {
+      return !variant.isAvailable
+    } else if product.variants?.isEmpty ?? true {
+      return !product.isAvailable
+    } else {
       return true
     }
-    return !variant.isAvailable
   }
 }
