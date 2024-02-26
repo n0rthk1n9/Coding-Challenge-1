@@ -1,0 +1,5 @@
+# Coding Challenge Dokumentation
+
+Beim Entwickeln der App lag mein Hauptaugenmerk zunächst darauf, eine solide Basis für den Zugriff auf die Daten, sowie das Parsen dieser Daten zu schaffen. Hierfür entschied ich mich für die Implementierung der App unter Verwendung der MVVM-Architektur, ergänzt durch einen zusätzliche Service Layer. Dieser Service Layer implementiert ein Protokoll, das es ermöglicht, später für Unit Tests einfach einen Mock Service zu integrieren. Diese Struktur fördert die Wartbarkeit und Testbarkeit der App erheblich und bietet eine klare Trennung zwischen der Businesslogik und der UI.
+
+Im weiteren Verlauf des Projekts konzentrierte ich mich darauf, das Design so genau wie möglich nachzubilden. Dabei war es mir wichtig, möglichst kleine, wiederverwendbare Views zu bauen, um die Übersichtlichkeit und Wiederverwendbarkeit des Codes zu erhöhen. Zudem legte ich Wert darauf, die Businesslogik in die ViewModels auszulagern. Dieser Ansatz ermöglicht es, eine klare Trennung zwischen der UI und der Businesslogik zu bewahren, was zu einer sauberen, gut strukturierten und leicht wartbaren Codebasis führt.
