@@ -26,19 +26,13 @@ struct ProductDetailView: View {
         .padding(.horizontal)
         .padding(.top)
         if let variants = viewModel.product.variants {
-          VStack(alignment: .leading) {
-            Text("Farbe")
-              .font(.headline)
-            HStack {
-              ForEach(variants, id: \.id) { variant in
-                VariantSelectionButton(variant: variant, isSelected: viewModel.selectedVariantID == variant.id) {
-                  viewModel.selectVariant(variant)
-                }
-              }
+          ProductDetailVariantsView(
+            variants: variants,
+            selectedVariantID: viewModel.selectedVariantID,
+            onVariantSelected: { variant in
+              viewModel.selectVariant(variant)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-          }
-          .padding()
+          )
         }
         VStack(alignment: .leading) {
           Text("Beschreibung")
