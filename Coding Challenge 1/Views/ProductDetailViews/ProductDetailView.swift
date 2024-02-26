@@ -33,6 +33,9 @@ struct ProductDetailView: View {
         isAddToCartButtonDisabled: viewModel.isAddToCartButtonDisabled
       )
     }
+    .navigationBarTitleDisplayMode(.inline)
+    .toolbar(.hidden)
+    .ignoresSafeArea(edges: .top)
   }
 }
 
