@@ -34,16 +34,7 @@ struct ProductDetailView: View {
             }
           )
         }
-        VStack(alignment: .leading) {
-          Text("Beschreibung")
-            .font(.headline)
-            .padding(.bottom)
-          Text(viewModel.product.description)
-            .font(.caption)
-        }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.bottom, 70)
+        ProductDetailDescriptionView(description: viewModel.product.description)
       }
       VStack {
         Spacer()
