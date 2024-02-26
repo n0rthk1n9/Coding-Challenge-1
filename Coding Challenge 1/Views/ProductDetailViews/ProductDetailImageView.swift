@@ -9,21 +9,33 @@ import SwiftUI
 
 struct ProductDetailImageView: View {
   var imageUrl: URL?
+  @State private var isFavorite: Bool = false
 
   var body: some View {
-    AsyncImage(
-      url: imageUrl,
-      content: { image in
-        image
-          .resizable()
-          .scaledToFill()
-          .ignoresSafeArea()
-          .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height * 0.66)
-      },
-      placeholder: {
-        ProgressView()
+    ZStack(alignment: .topTrailing) {
+      AsyncImage(
+        url: imageUrl,
+        content: { image in
+          image
+            .resizable()
+            .scaledToFill()
+            .ignoresSafeArea(edges: .top)
+            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height * 0.66)
+        },
+        placeholder: {
+          ProgressView()
+        }
+      )
+
+      Button(action: {
+        isFavorite.toggle()
+      }) {
+        Image(systemName: isFavorite ? "heart.fill" : "heart")
+          .font(.title2)
+          .foregroundColor(.black)
+          .padding(.trailing, 25)
       }
-    )
+    }
   }
 }
 
