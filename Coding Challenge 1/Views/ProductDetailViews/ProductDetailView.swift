@@ -36,23 +36,10 @@ struct ProductDetailView: View {
         }
         ProductDetailDescriptionView(description: viewModel.product.description)
       }
-      VStack {
-        Spacer()
-        Button(action: {}) {
-          Text(viewModel.addToCartButtonText)
-            .fontWeight(.bold)
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(viewModel.isAddToCartButtonDisabled ? Color.gray : Color.black)
-            .cornerRadius(10)
-        }
-        .padding()
-        .background(Color.white)
-        .shadow(radius: 2)
-        .disabled(viewModel.isAddToCartButtonDisabled)
-      }
-      .frame(height: 60)
+      ProductDetailAddToCartButtonView(
+        addToCartButtonText: viewModel.addToCartButtonText,
+        isAddToCartButtonDisabled: viewModel.isAddToCartButtonDisabled
+      )
     }
   }
 }

@@ -24,6 +24,7 @@
 		57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57192C982B89184800294392 /* ProductsOverviewCardView.swift */; };
 		57AA9BD52B8C865B00294392 /* ProductDetailVariantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA9BD42B8C865B00294392 /* ProductDetailVariantsView.swift */; };
 		57AA9BD72B8C876700294392 /* ProductDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA9BD62B8C876700294392 /* ProductDetailDescriptionView.swift */; };
+		57AA9BDA2B8C889600294392 /* ProductDetailAddToCartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA9BD92B8C889600294392 /* ProductDetailAddToCartButtonView.swift */; };
 		57D517D62B8A0BA500294392 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D52B8A0BA500294392 /* ProductDetailView.swift */; };
 		57D517D82B8A1AC200294392 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */; };
 		57D517DA2B8A1D5100294392 /* VariantSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */; };
@@ -49,6 +50,7 @@
 		57192C982B89184800294392 /* ProductsOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOverviewCardView.swift; sourceTree = "<group>"; };
 		57AA9BD42B8C865B00294392 /* ProductDetailVariantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVariantsView.swift; sourceTree = "<group>"; };
 		57AA9BD62B8C876700294392 /* ProductDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailDescriptionView.swift; sourceTree = "<group>"; };
+		57AA9BD92B8C889600294392 /* ProductDetailAddToCartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailAddToCartButtonView.swift; sourceTree = "<group>"; };
 		57D517D52B8A0BA500294392 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		57D517D72B8A1AC200294392 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantSelectionButton.swift; sourceTree = "<group>"; };
@@ -149,13 +151,22 @@
 				57192C982B89184800294392 /* ProductsOverviewCardView.swift */,
 				57192C962B89179700294392 /* ProductImageView.swift */,
 				57192C942B89133800294392 /* AvailabilityBadgeView.swift */,
+				57AA9BD82B8C888400294392 /* ProductDetailViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57AA9BD82B8C888400294392 /* ProductDetailViews */ = {
+			isa = PBXGroup;
+			children = (
 				57D517D52B8A0BA500294392 /* ProductDetailView.swift */,
 				57D517DB2B8A223800294392 /* ProductDetailImageView.swift */,
 				57AA9BD42B8C865B00294392 /* ProductDetailVariantsView.swift */,
 				57D517D92B8A1D5100294392 /* VariantSelectionButton.swift */,
 				57AA9BD62B8C876700294392 /* ProductDetailDescriptionView.swift */,
+				57AA9BD92B8C889600294392 /* ProductDetailAddToCartButtonView.swift */,
 			);
-			path = Views;
+			path = ProductDetailViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				57D517DC2B8A223800294392 /* ProductDetailImageView.swift in Sources */,
 				57D517DA2B8A1D5100294392 /* VariantSelectionButton.swift in Sources */,
 				57192C902B88F77900294392 /* ProductsService.swift in Sources */,
+				57AA9BDA2B8C889600294392 /* ProductDetailAddToCartButtonView.swift in Sources */,
 				57192C992B89184800294392 /* ProductsOverviewCardView.swift in Sources */,
 				57D517D62B8A0BA500294392 /* ProductDetailView.swift in Sources */,
 				57192C872B88F38900294392 /* Variant.swift in Sources */,
